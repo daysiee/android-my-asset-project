@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/app_font"
+        android:layout_marginTop="113dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="27sp"
+        android:layout_marginStart="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0C0C0C"
+        android:text="MY자산스텝"></TextView>
+
+
+    <View
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="63dp"
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"></View>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="37dp"
+            android:layout_marginStart="13dp"
+            android:id="@+id/tryangle1"
+            android:src="@drawable/tri"
+            android:layout_width="42px"
+            android:layout_height="80px">
+        </ImageView>
+
+    <Button
+        android:fontFamily="@font/app_font"
+        android:background="#00FF0000"
+        android:textSize="18sp"
+        android:layout_marginStart="65dp"
+        android:textColor="#504F4F"
+        android:id="@+id/btn_myAssetStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My자산스텝"></Button>
+
+        <Button
+            android:layout_marginTop="60dp"
+            android:background="#00FF0000"
+            android:textSize="18sp"
+            android:textColor="#504F4F"
+            android:layout_marginStart="65dp"
+            android:fontFamily="@font/app_font"
+            android:id="@+id/btn_myRevDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My수익분석"></Button>
+    </FrameLayout>
+
+
+
+</LinearLayout>

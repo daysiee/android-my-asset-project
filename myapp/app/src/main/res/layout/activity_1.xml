@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="118dp"
+            android:layout_marginStart="13dp"
+            android:id="@+id/tryangle1"
+            android:src="@drawable/tri"
+            android:layout_width="42px"
+            android:layout_height="80px">
+        </ImageView>
+    <TextView
+        android:fontFamily="@font/app_font"
+        android:textColor="#0C0C0C"
+      android:layout_marginTop="113dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="27sp"
+        android:layout_marginStart="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY자산"></TextView>
+    </FrameLayout>
+
+    <View
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="63dp"
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"></View>
+
+    <Button
+        android:fontFamily="@font/app_font"
+        android:background="#00FF0000"
+        android:textSize="18sp"
+        android:layout_marginStart="65dp"
+        android:textColor="#504F4F"
+        android:id="@+id/btn_TotAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My자산조회"></Button>
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/lltitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_below="@+id/title"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_goback"
+                android:layout_width="21px"
+                android:layout_height="28px"
+                android:background="@drawable/backback"
+                ></Button>
+            <TextView
+                android:id="@+id/title"
+                android:text="tx"
+                android:textColor="@color/colorKB"
+                android:background="@color/colorKB"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/app_font"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:text="트레이딩개발부"></TextView>
+
+            <ImageView
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="43dp"
+                android:layout_width="682px"
+                android:layout_height="91px"
+                android:src="@drawable/myrevenue"></ImageView>
+            <ImageView
+                android:id="@+id/shadow"
+                android:layout_marginTop="72dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_menu_shadow"></ImageView>
+
+            <ImageView
+                android:layout_marginTop="82dp"
+                android:layout_marginStart="28dp"
+                android:id="@+id/dodbogi"
+                android:layout_below="@+id/lltitle"
+                android:layout_width="1405px"
+                android:layout_height="351px"
+                android:src="@drawable/dodbogi"></ImageView>
+            <View
+                android:layout_marginTop="210dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_below="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"></View>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/app_font"
+            android:id="@+id/acntInput"
+            android:textSize="18sp"
+            android:layout_marginStart="28dp"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:textColor="#8A8888"
+            android:text="계좌 선택"></TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/ll2"
+        android:layout_below="@+id/lltitle"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginStart="70dp"
+            android:fontFamily="@font/app_font"
+            android:id="@+id/pwInput"
+            android:textSize="18sp"
+            android:textColor="#8A8888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 입력"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll3"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_marginStart="22dp"
+            android:id="@+id/spinnerAcnt"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:entries="@array/acnt">
+        </Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/ll3"
+        android:layout_below="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:fontFamily="@font/app_font"
+            android:layout_marginStart="10dp"
+            android:id="@+id/et_acntPw"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:textSize="6pt"
+            android:inputType="textPassword"
+            android:hint="비밀번호를 입력하세요">
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll4"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/app_font"
+            android:id="@+id/dateInput"
+            android:textSize="18sp"
+            android:textColor="#8A8888"
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:text="기간 선택"></TextView>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginStart="22dp"
+        android:id="@+id/ll5"
+        android:layout_below="@+id/ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinnerDtStart"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:entries="@array/startDt"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/ll5"
+        android:layout_below="@+id/ll4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerDtEnd"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:entries="@array/endDt"></Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/ll7"
+        android:layout_below="@+id/ll5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/btn_getRevChart"
+            android:layout_width="418px"
+            android:layout_height="80px"
+            ></Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll6"
+        android:layout_below="@+id/ll7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            ></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ll6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

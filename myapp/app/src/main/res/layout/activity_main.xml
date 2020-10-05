@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center|left"
+        android:text="   트레이딩개발부"
+        android:textSize="15sp"
+        android:textColor="#917730"
+        android:fontFamily="@font/app_font"
+        android:background="@color/colorKB"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <ImageView
+     android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="330px"
+        android:layout_height="92px"
+        android:src="@drawable/img_my_logo"></ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_menu_shadow"></ImageView>
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:layout_width="430px"
+        android:layout_height="576px"
+        android:src="@drawable/reallogin"></ImageView>
+
+
+    <EditText
+        android:fontFamily="@font/app_font"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/et_id"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:hint="ID를 입력하세요"/>
+    <EditText
+        android:fontFamily="@font/app_font"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:id="@+id/et_pw"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:hint="PW를 입력하세요"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_login"
+        android:background="@drawable/lockbotton"
+        android:layout_width="780px"
+        android:layout_height="130px" />
+
+</LinearLayout>
